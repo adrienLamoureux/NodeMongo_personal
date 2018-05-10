@@ -10,8 +10,6 @@ npm run server
 
 Integration NodeJS with TypeScript + common models...DONE 
 
-Clean code...TODO
-
 Integration Unit tests Back-end...TODO
 
 Integration Jenkins server...TODO
