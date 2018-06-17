@@ -72,6 +72,7 @@ export class Server {
     //add static paths
     this.app.use(express.static(path.join(__dirname, '..' , '..', 'dist')));
     this.app.use(express.static(path.join(__dirname, '..' , '..', 'ui')));
+    this.app.use(express.static(path.join(__dirname, '..' , '..', 'ui/dist')));
 
     //mount logger
     this.app.use(logger("dev"));
