@@ -41,7 +41,9 @@
     "nodemon": "^1.14.8",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
-    "typescript": "^2.7.1"
+    "typescript": "^2.7.1",
+    "@types/node": "~6.0.60",
+    "@types/mongoose": "^5.0.1"
   },
   "devDependencies": {
     "@types/body-parser": "^1.16.8",
@@ -51,8 +53,6 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/method-override": "0.0.31",
     "@types/mongodb": "^3.0.5",
-    "@types/mongoose": "^5.0.1",
-    "@types/morgan": "^1.7.35",
-    "@types/node": "~6.0.60"
+    "@types/morgan": "^1.7.35"
   }
 }
