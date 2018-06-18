@@ -4,20 +4,24 @@ var debug = require("debug")("express:server");
 var http = require("http");
 const config = require('../dist/config/config');
 
+var port = process.env.PORT || config.port;
+
 //create http server
 var app = server.Server.bootstrap().app;
 app.set('url', config.url);
-app.set("port", config.port);
+app.set("port", port);
 var httpServer = http.createServer(app);
 
 //listen on provided ports
-httpServer.listen(config.port);
+httpServer.listen(port);
 
 //add error handler
 httpServer.on("error", onError);
 
 //start listening on port
 httpServer.on("listening", onListening);
+
+console.log("Express started on port: "+port);
 
 /**
  * Event listener for HTTP server "error" event.
