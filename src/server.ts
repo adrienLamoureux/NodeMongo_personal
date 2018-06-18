@@ -91,7 +91,7 @@ export class Server {
     this.app.use(methodOverride());
 
     //connect to mongoose
-    Server.dbConnection = mongoose.createConnection(MONGODB_CONNECTION);
+    Server.dbConnection = mongoose.createConnection(MONGODB_CONNECTION, {db: config.mongoDB, user: config.mongoUser, pass: config.mongoPwd});
 
     //create models
 

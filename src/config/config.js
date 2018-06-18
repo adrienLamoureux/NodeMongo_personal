@@ -10,9 +10,11 @@ const config = {
     },
     allowCORS: true,
     authorizedCORS:"4200",
-    mongoUrl:"localhost",
-    mongoPort:"27017",
-    mongoDB:"local"
+    mongoUser: "adrien8",
+    mongoPwd: "perso_adrien8",
+    mongoUrl:"adrien8:perso_adrien8@ds163730.mlab.com",
+    mongoPort:"63730",
+    mongoDB:"perso"
 };
 
 module.exports = config;
